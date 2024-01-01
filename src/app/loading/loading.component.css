@@ -1,0 +1,68 @@
+
+.circle{
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    border: rgb(0, 183, 255) 1px solid;
+    background-image: linear-gradient(45deg, rgb(0, 183, 255) 50%, rgb(214, 214, 214) 50%);
+    background-size: 200% 200%;
+    background-position: 100% 0%;
+    background-repeat: repeat;
+    animation: moon 9682ms 1 ease-in-out forwards;
+}
+@keyframes moon {
+    10% { background-position: 0% 0%; }
+    20% { background-position: 0% 0%; }
+    30% { background-position: 0% 100%; }
+    40% { background-position: 0% 100%; }
+    50% { background-position: 50% 50%; }
+    60% { background-position: 50% 50%; }
+    70% { background-position: 0% 0%; background-image: linear-gradient(0deg, rgb(0, 183, 255) 50%, rgb(250, 105, 123) 50%) }
+    80% { background-position: 0% 0%; background-image: linear-gradient(0deg, rgb(0, 183, 255) 50%, rgb(250, 105, 123) 50%) }
+    81% { background-image: linear-gradient(0deg, rgb(255, 251, 25) 50%, rgb(250, 105, 123) 50%) }
+    88% { background-position: 0% 100%; }
+    100% { background-position: 0% 100%; background-image: linear-gradient(0deg, rgb(255, 251, 25) 50%, rgb(250, 105, 123) 50%) }
+}
+.circleWhite{
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0vw;
+    height: 0vw;
+    border-radius: 50%;
+    background-color: rgb(214, 214, 214);
+    animation: whiteAnim 9682ms 1 ease-in-out forwards;
+}
+@keyframes whiteAnim {
+    95% {width: 0vw; height: 0vh;}
+    100% {width: 200vw; height: 200vw;}
+}
+.loading{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgb(250, 105, 123) 50%, rgb(214, 214, 214) 50%);
+    background-size: 200% 200%;
+    background-position: 100% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundAnim 9182ms 1 ease-in-out forwards;
+}
+@keyframes backgroundAnim {
+    40% { background-position: 100% 0%; }
+    50% { background-position: 0% 100%; background-image: linear-gradient(0deg, rgb(255, 125, 143) 50%, rgb(214, 214, 214) 50%); }
+    51% { background-image: linear-gradient(0deg, rgb(255, 125, 143) 50%, rgb(255, 251, 25) 50%); }
+    82% { background-position: 0% 100%; }
+    92% { background-position: 100% 0%; }
+    100% { background-position: 100% 0%; background-image: linear-gradient(0deg, rgb(255, 125, 143) 50%, rgb(255, 255, 122) 50%); }
+}
+.loadingText{
+    position: absolute;
+    left: 1%;
+    bottom: -3%;
+    font-size: 1500%;
+    font-family: "Plus Jakarta Sans";
+    letter-spacing: -20px;
+}

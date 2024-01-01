@@ -1,0 +1,40 @@
+
+.upperPart{
+    width: 100vw;
+    height: 90vh;
+    background-color: aliceblue;
+    z-index: 10;
+    border-radius: 0 0 20% 20%;
+  }
+  .upperPart > img{
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    transform: rotate(0deg);
+    border-radius: 5px;
+  }
+  .upperPart > span{
+    position: absolute;
+    bottom: 24%;
+    left: 5%;
+    height: 17vh;
+    font-size: 7.6vw;
+  }
+  .fallAnim1{
+    animation: fallAnim1 1s forwards ease-in;
+    z-index: 9999;
+  }
+  .fallAnim2{
+    animation: fallAnim2 1s forwards ease-in;
+    z-index: 9999;
+  }
+  @keyframes fallAnim1 {
+    0%{ bottom: 20%; right: 10%; transform: rotate(0deg); opacity: 1; }
+    80% { opacity: 0; }
+    100% { bottom: -40%; right: 0; transform: rotate(90deg); opacity: 0; }
+  }
+  @keyframes fallAnim2 {
+    0%{ bottom: 20%; right: 10%; transform: rotate(0deg); opacity: 1; }
+    80% { opacity: 0; }
+    100% { bottom: -40%; right: 20%; transform: rotate(-90deg); opacity: 0; }
+  }

@@ -1,0 +1,98 @@
+<div #conteiner class="container">
+    <app-loading #loading style="z-index: 120000; position: absolute;"></app-loading>
+    <div #main class="main" (mousemove)="onMove($event)">
+        <app-mainupper></app-mainupper>
+        <div class="desc">
+            <img src="assets/BallPhotos/a1.png" class="reveal">
+            <div class="reveal"></div>
+            <span class="reveal">Kula Luminara to unikalny gadżet, który wprowadza magię światła do Twojego otoczenia. Ta elegancka kula świeci jedynie wtedy, gdy na nią patrzysz, co sprawia, że staje się urokliwym elementem dekoracyjnym i fascynującym przedmiotem do obserwacji.<br><br> Jej tajemnicza właściwość opiera się na innowacyjnej technologii fotosensytywnej. Wewnętrzna struktura kuli zawiera materiał reagujący na ludzką obserwacje, który aktywuje subtelne źródło światła umieszczone w jej wnętrzu. Gdy na nią spojrzysz, kula ożywa, rozświetlając przestrzeń wokół niej.<br><br> To fascynujące dzieło sztuki nie wymaga zasilania elektrycznego ani baterii, co sprawia, że jest ekologiczne i energooszczędne. Kula Luminara doskonale sprawdzi się jako element dekoracyjny w salonie, sypialni czy biurze, tworząc magiczną atmosferę, która zaskoczy każdego, kto na nią spojrzy. Odkryj nowy wymiar designu i wprowadź do swojego życia świecący efekt, który reaguje na Twoją obecność.</span>
+        </div>
+        <div class="mainLower">
+            <div class="whiteIntoImage WII1">
+                <div class="WIW reveal"></div>
+                <img class="WII reveal" src="assets/BallPhotos/a1.png">
+                <span text="Silne światło"></span>
+            </div>
+            <div class="whiteIntoImage WII2">
+                <div class="WIW reveal"></div>
+                <img class="WII reveal" src="assets/BallPhotos/a2.png">
+                <span text="Moc blasku"></span>
+            </div>
+            <div class="whiteIntoImage WII3">
+                <div class="WIW reveal"></div>
+                <img class="WII reveal" src="assets/BallPhotos/a3.png">
+                <span text="Ponad czasowy wygląd"></span>
+            </div>
+        </div>
+        <div class="reviews reveal">
+            <span>Nasze opinie mówią same za siebie !</span>
+            <div>
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
+                <img class="stars" src="https://clipart-library.com/new_gallery/104-1043568_5-star-rating-png.png">
+                <span class="name">Helena</span>
+                <span class="text"><br>bardzo fajny produkt, kupiłam dla siebie i córki, bardzo uzależnia. Pozdrawiam cieplutko z rodzinką</span>
+            </div>
+            <div>
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
+                <img class="stars" src="https://clipart-library.com/new_gallery/104-1043568_5-star-rating-png.png">
+                <span class="name">Napewno nie chatGPT</span>
+                <span class="text"><br>Kula Luminara to rewelacyjny gadżet! Jej świecenie tylko podczas patrzenia dodaje magicznego uroku. Innowacyjna technologia fotosensytywna bez użycia prądu sprawia, że to idealny element dekoracyjny. Polecam każdemu, kto szuka wyjątkowego dodatku do wnętrza!</span>
+            </div>
+            <div>
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
+                <img class="stars" src="https://clipart-library.com/new_gallery/104-1043568_5-star-rating-png.png">
+                <span class="name">Paweł</span>
+                <span class="text"><br>Nie polecam</span>
+            </div>
+            <div>
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
+                <img class="stars" src="https://clipart-library.com/new_gallery/104-1043568_5-star-rating-png.png">
+                <span class="name">Ukasz</span>
+                <span class="text"><br>Nie wysmysle nic sry zapytaj o cos innego</span>
+            </div>
+            <div>
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
+                <img class="stars" src="https://clipart-library.com/new_gallery/104-1043568_5-star-rating-png.png">
+                <span class="name">Mirzał Grabki</span>
+                <span class="text"><br>Intrygujący produkt</span>
+            </div>
+            <div>
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
+                <img class="stars" src="https://clipart-library.com/new_gallery/104-1043568_5-star-rating-png.png">
+                <span class="name">Roman</span>
+                <span class="text"><br>Kupiłem pierwszą kule 2 miesiące temu, od tego czasu nie moge przestać na nią patrzyć, jestem od niej uzależniony, patrze sie na nią całe dni i noce, straciłem już prace dlatego że nie mogłem pójść do pracy bo sie na nią patrzyłem, żone też straciłem bo wydałem wszystkie oszczędności na kule, powoli kula zabiera mi życie. Polecam 10/10</span>
+            </div>
+        </div>
+        <div class="colors reveal">
+            <span>Dostępne kolory</span>
+            <div>
+                <img src="assets/BallPhotos/white ball.png">
+                <span>biały</span>
+            </div>
+            <div>
+                <img src="assets/BallPhotos/green ball.png">
+                <span>zielony</span>
+            </div>
+            <div>
+                <img src="assets/BallPhotos/red ball.png">
+                <span>czerwony</span>
+            </div>
+            <div>
+                <img src="assets/BallPhotos/pink ball.png">
+                <span>różowy</span>
+            </div>
+            <div>
+                <img src="assets/BallPhotos/blue ball.png">
+                <span>niebieski</span>
+            </div>
+        </div>
+        <div class="buy reveal">
+            <span>Zainteresowany ?</span>
+            <div class="buyButton" (click)="navigate()">Kliknij aby kupić swoją kule</div>
+        </div>
+        <div class="footer">
+            Created by: Tomasz Ocłoń | 2023
+        </div>
+    </div>
+    <div #particle style="left: -100px; top: -300px;" class="particle"></div>
+</div>

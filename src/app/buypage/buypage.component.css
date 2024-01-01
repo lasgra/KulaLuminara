@@ -1,0 +1,112 @@
+@import 'https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans';
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(214, 214, 214);
+    font-family: "Plus Jakarta Sans";
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Plus Jakarta Sans";
+    user-select: none;
+}
+.main > span{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 5vh;
+    background-color: rgb(194, 194, 194);
+    padding-bottom: 1vh;
+    border-radius: 5vh;
+    box-shadow: 2px 20px 27px -13px rgba(66, 68, 90, 1);
+}
+.images{
+    width: 40vw;
+    height: 40vw;
+    background-color: rebeccapurple;
+    border-radius: 5vh;
+    box-shadow: 6px 28px 27px -13px rgba(66, 68, 90, 1);
+}
+.images > div{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5vh;
+    justify-content: space-around;
+}
+.images > div > img{
+    width: 5vw;
+    height: 5vw;
+    margin-bottom: 2vh;
+    border: 2px black solid;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+.images > div > img:active {
+    margin-bottom: 1.7vh;
+}
+.images > div > img:hover{
+    border: 2px wheat solid;
+}
+.text {
+    width: 50vw;
+    height: 40vw;
+    background-color: rgb(194, 194, 194);
+    border-radius: 5vh;
+    padding-left: 1vw;
+    box-shadow: inset 3px 4px 27px 6px rgba(66, 68, 90, 1);
+    position: relative;
+}
+.price {
+    position: absolute;
+    background-image: url(https://pngimg.com/d/price_label_PNG56.png);
+    background-size: contain;
+    bottom: 0.5vh;
+    right: 8vw;
+    width: 11vw;
+    height: 7vw;
+}
+.price > span{
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    transform: rotate(7deg);
+    font-size: 3vh;
+    color: wheat;
+}
+.title{
+    width: 100%;
+    display: block;
+    font-size: 4vh;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.desc{
+    font-size: 2.5vh;
+}
+.buy{
+    width: 16vw;
+    height: 8vh;
+    background-color: rgb(230, 206, 69);
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 4vh;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    font-size: 3vh;
+    transform: translate(-50%, 0%);
+    box-shadow: 0px 0px 20px 0px rgba(66, 68, 90, 1);
+}

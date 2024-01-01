@@ -1,0 +1,104 @@
+.header{
+    width: 100vw;
+    height: 12vh;
+    min-height: 90px;
+    background-image: linear-gradient(to bottom, rgb(214, 214, 214), rgba(214, 214, 214, 0.705), rgba(214, 214, 214, 0));
+}
+.leftMain{
+    height: 100%;
+    width: 18%;
+    min-width: 230px;
+    float: left;
+    font-family: "Plus Jakarta Sans";
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.rightMain{
+    height: 100%;
+    width: 50%;
+    float: right;
+    font-family: "Plus Jakarta Sans";
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.rightMain > * {
+    margin-right: 6%;
+}
+.rightMain > span {
+    cursor: pointer;
+    animation: spanUnSelect 200ms 1 forwards ease-in-out;
+}
+.rightMain > span:hover {
+    animation: spanSelect 200ms 1 forwards ease-in-out;
+}
+@keyframes spanSelect {
+    0% { color: black; }
+    100% { color: rgb(0, 183, 255); }
+}
+@keyframes spanUnSelect {
+    100% { color: black; }
+    0% { color: rgb(0, 183, 255); }
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    animation: searchUnFocus 400ms 1 forwards ease-in-out;
+}
+.search > input {
+    margin-right: 2vw;
+    height: 3vh;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-family: "Plus Jakarta Sans";
+    animation: inputUnFocus 400ms 1 forwards ease-in-out;
+}
+.search > input:focus {
+    animation: inputFocus 400ms 1 forwards ease-in-out
+}
+.search:has(> input:focus) {
+    animation: searchFocus 400ms 1 forwards ease-in-out
+}
+.search > input:focus + img {
+    animation: iconFocus 400ms 1 forwards ease-in-out;
+}
+@keyframes inputFocus {
+    0% { margin-right: 2vw; }
+    100% { margin-right: 6vw; }
+}
+@keyframes inputUnFocus {
+    0% { margin-right: 6vw; }
+    100% { margin-right: 2vw; }
+}
+@keyframes searchFocus {
+    0% { border-bottom: 1px rgba(128, 128, 128, 0) solid; }
+    100% { border-bottom: 1px gray solid; }
+}
+@keyframes searchUnFocus {
+    0% { border-bottom: 1px gray solid; }
+    100% { border-bottom: 1px rgba(128, 128, 128, 0) solid; }
+}
+@keyframes iconFocus {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+@keyframes iconUnFocus {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+.search > img {
+    width: 38px;
+    height: 38px;
+    opacity: 0.5;
+    animation: iconUnFocus 400ms 1 forwards ease-in-out;
+}
+.blueCircle{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    margin: 0.2vh 0.5vw 0 1.5vw;
+}

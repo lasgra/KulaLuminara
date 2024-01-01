@@ -1,0 +1,289 @@
+@import 'https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans';
+.container{
+    width: 100vw;
+    height: 650vh;
+    background-color: rgb(214, 214, 214);
+    user-select: none;
+}
+.main{
+    width: 100vw;
+    height: 500vh;
+    background-color: rgb(214, 214, 214);
+    flex-wrap: wrap;
+    font-family: "Plus Jakarta Sans";
+}
+.particle{
+    position: absolute;
+    background-color: rgb(175, 175, 175);
+    width: 5px;
+    height: 5px;
+    transform: rotate(-45deg);
+    animation: rotate 1s 1 forwards;
+    z-index: 11;
+}
+@keyframes rotate {
+    0% {transform: rotate(-90deg); opacity: 0;}
+    100% {transform: rotate(90deg); opacity: 1;}
+}
+.whiteIntoImage{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+.whiteIntoImage > div{
+  position: absolute;
+  bottom: -15%;
+  width: 100%;
+  height: 5%;
+  background-color: white;
+}
+.whiteIntoImage > img{
+  position: absolute;
+  bottom: -15%;
+  width: 100%;
+  height: 0;
+}
+.desc{
+  position: relative;
+  margin-top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.desc > img{
+  width: 40vw;
+  height: 40vw;
+}
+
+.desc > span{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 50vw;
+  height: 70vh;
+  display: block;
+  font-size: 1.65vw;
+}
+.desc > div{
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  width: 17vw;
+  height: 20vh;
+  background-image: url("/assets/openEye.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mainLower{
+  margin-top: 10vh;
+  width: 100vw;
+  height: 125vh;
+}
+.WIW.active{
+  animation: White 1s forwards ease-in-out;
+}
+.WII.active{
+  animation: Image 1s forwards ease-in-out;
+}
+@keyframes White {
+  30% { height: 100%;  }
+  70% { bottom: 0;  }
+  100% { height: 100%; bottom: 0; }
+}
+@keyframes Image {
+  20% { height: 0;  }
+  40% { height: 100%; }
+  80% { bottom: 0; }
+  100% { height: 100%; bottom: 0; }
+}
+.WII1{
+  left: 5vw;
+  top: 205vh;
+}
+.WII1 > span{
+  position: absolute;
+  width: 100vw;
+  top: 30%;
+  left: 70%;
+  font-size: 400%;
+  font-family: "Plus Jakarta Sans";
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5), 1px -1px 0 rgba(255, 255, 255, 0.5), -1px 1px 0 rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+.WII2{
+  right: 5vw;
+  top: 225vh;
+}
+.WII2 > span{
+  position: absolute;
+  width: 100vw;
+  top: 60%;
+  left: -60%;
+  font-size: 400%;
+  font-family: "Plus Jakarta Sans";
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5), 1px -1px 0 rgba(255, 255, 255, 0.5), -1px 1px 0 rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+.WII3{
+  left: 45vw;
+  top: 270vh;
+}
+.WII3 > span{
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  left: 0%;
+  font-size: 400%;
+  font-family: "Plus Jakarta Sans";
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5), 1px -1px 0 rgba(255, 255, 255, 0.5), -1px 1px 0 rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+.reviews{
+  margin-top: 30vh;
+  width: 100vw;
+  height: 76vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around;
+}
+.reviews > span{
+  margin-bottom: 10vh;
+  width: 100vw;
+  height: 10vh;
+  font-size: 5vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews > div{
+  position: relative;
+  width: 30vw;
+  height: 30vh;
+}
+.reviews > div > .icon {
+  width: 2.1vw;
+  height: 2vw;
+  margin-right: 0.5vw;
+}
+.reviews > div > .stars {
+  width: 5.5vw;
+  height: 1vw;
+}
+.reviews > div > .name {
+  position: absolute;
+  left: 2.7vw;
+  top: -0.2vw;
+}
+.reviews > div > .text {
+  display: block;
+  width: 100%;
+}
+
+
+
+.colors{
+  margin-top: 15vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.colors > span{
+  width: 100vw;
+  height: 10vh;
+  font-size: 5vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colors > div{
+  width: 16vw;
+  height: 70vh;
+  padding: 0 1.875vw 0 1.875vw;
+}
+.colors > div > img{
+  object-fit: cover;
+  object-position: right;
+  width: 16vw;
+  height: 60vh;
+}
+.colors > div > span{
+  font-size: 3vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+
+}
+.buy{
+  margin-top: 15vh;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  font-size: 5vh;
+  z-index: 99;
+}
+.buyButton{
+  margin-top: 12vh;
+  border-radius: 3vw;
+  width: 26vw;
+  height: 6vw;
+  background-color: rgb(81, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
+  transition: 1s;
+  z-index: 12;
+  cursor: pointer;
+  box-shadow: rgba(58, 58, 58, 0.363) 2px 2px 5px 0px;
+}
+.buyButton:hover{
+  box-shadow: rgba(58, 58, 58, 0.363) 20px 20px 5px 0px;
+}
+.buyButton:active{
+  box-shadow: rgba(58, 58, 58, 0.363) 20px 20px 5px 0px;
+}
+
+.footer{
+  margin-top: 15vh;
+  background-color: rgb(29, 29, 29);
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: rgb(214, 214, 214);
+}
+
+
+
+
+
+
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
